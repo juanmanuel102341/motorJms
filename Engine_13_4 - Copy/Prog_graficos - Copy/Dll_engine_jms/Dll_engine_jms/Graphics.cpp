@@ -1,7 +1,8 @@
 #include"Graphics.h"
 
 
-bool Graphics::Initialize() {
+bool Graphics::Initialize(/*Ventana* _ventana*/) {
+	//nuevaVentana = _ventana;
 	if (!InitDirect3D()) {
 		return false;
 	}
@@ -10,10 +11,10 @@ bool Graphics::Initialize() {
 		
 }
 void Graphics::Begin(){
-
+	//pd3dDevice->BeginScene();
 }
 void Graphics::End() {
-
+	//pd3dDevice->EndScene();
 }
 void Graphics::Clear() {
 	pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 255), 1.0f, 0);
@@ -70,9 +71,9 @@ void Graphics::CleanUp(void) {
 		pD3D->Release();
 	}
 }
-Graphics::Graphics(Ventana _objVentana) {
+Graphics::Graphics() {
 	
 	
-	//objVentana = _objVentana;
+	
 
 }

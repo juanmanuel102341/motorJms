@@ -12,10 +12,10 @@ bool Game::StartUp(HINSTANCE hInstance)
 	}
 	else {
 		
-		//nuevoGraphics = new Graphics(nuevaVentana);
-		//if (!nuevoGraphics->Initialize()) {
-		//	return false;
-		//}
+		//nuevoGraphics = new Graphics;
+		//if (!nuevoGraphics->Initialize(nuevaVentana)) {
+			//return false;
+	//	}
 		return OnInitialize();
 	//mensaje error
 	}

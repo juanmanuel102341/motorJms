@@ -12,9 +12,9 @@ public:
 	
 	LPDIRECT3D9 pD3D;//objeto
 	LPDIRECT3DDEVICE9 pd3dDevice;//device
-	Graphics(Ventana _objVentana);
+	Graphics();
 		//Ventana objVentana;
-		bool Initialize();
+		bool Initialize(/*Ventana* _objVentana*/);
 		bool Shutdown();
 		void Clear();
 		void Begin();
