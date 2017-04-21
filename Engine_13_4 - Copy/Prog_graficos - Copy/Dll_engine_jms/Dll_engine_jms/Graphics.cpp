@@ -1,8 +1,7 @@
 #include"Graphics.h"
 
-
-bool Graphics::Initialize(/*Ventana* _ventana*/) {
-	//nuevaVentana = _ventana;
+bool Graphics::Initialize(Ventana* _ventana) {
+	nuevaVentana = _ventana;
 	if (!InitDirect3D()) {
 		return false;
 	}
@@ -10,11 +9,14 @@ bool Graphics::Initialize(/*Ventana* _ventana*/) {
 	
 		
 }
+void Graphics::Draw() {
+//dibujo escena
+}
 void Graphics::Begin(){
-	//pd3dDevice->BeginScene();
+	pd3dDevice->BeginScene();
 }
 void Graphics::End() {
-	//pd3dDevice->EndScene();
+	pd3dDevice->EndScene();
 }
 void Graphics::Clear() {
 	pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 255), 1.0f, 0);
@@ -31,7 +33,7 @@ bool Graphics::Shutdown() {
 }
 
 bool Graphics::InitDirect3D(void) {
-	/*
+	
 	pD3D = NULL;
 	pd3dDevice = NULL;
 	//objeto dtx;
@@ -49,13 +51,13 @@ bool Graphics::InitDirect3D(void) {
 	d3dpp.BackBufferCount = 1;
 	d3dpp.BackBufferWidth = 800;
 	d3dpp.BackBufferHeight = 600;
-	d3dpp.hDeviceWindow = objVentana.hWnd;
+	d3dpp.hDeviceWindow = nuevaVentana->hWnd;
 
 	//creamos device
 
-	if (FAILED(pD3D->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_REF,objVentana.hWnd, D3DCREATE_SOFTWARE_VERTEXPROCESSING, &d3dpp, &pd3dDevice))) {
+	if (FAILED(pD3D->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_REF,nuevaVentana->hWnd, D3DCREATE_SOFTWARE_VERTEXPROCESSING, &d3dpp, &pd3dDevice))) {
 		return false;
-	}*/
+	}
 	return true;
 	
 	}
@@ -63,7 +65,7 @@ void Graphics::Render(void) {
 	
 }
 void Graphics::CleanUp(void) {
-	if (pd3dDevice != NULL){
+      if (pd3dDevice != NULL){
 		pd3dDevice->Release();
 		}
 		

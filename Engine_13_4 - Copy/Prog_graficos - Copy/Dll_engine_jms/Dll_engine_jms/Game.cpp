@@ -12,10 +12,10 @@ bool Game::StartUp(HINSTANCE hInstance)
 	}
 	else {
 		
-		//nuevoGraphics = new Graphics;
-		//if (!nuevoGraphics->Initialize(nuevaVentana)) {
-			//return false;
-	//	}
+		nuevoGraphics = new Graphics;
+		if (!nuevoGraphics->Initialize(nuevaVentana)) {
+		return false;
+		}
 		return OnInitialize();
 	//mensaje error
 	}
@@ -34,8 +34,11 @@ void Game::Update() {
 			
 		}
 		else {
-			
-			OnDraw();
+				nuevoGraphics->Clear();
+			nuevoGraphics->Begin();
+			nuevoGraphics->Draw();
+			nuevoGraphics->End();
+			nuevoGraphics->Present();
 			done = !OnLoop();
 			
 		}
@@ -55,10 +58,7 @@ bool Game::OnLoop() {
 	return true;
 }
 void Game::OnDraw() {
-//	nuevoGraphics->Clear();
-	//nuevoGraphics->Begin();
-	//nuevoGraphics->End();
-	//nuevoGraphics->Present();
+
 }
 bool Game::OnShutDown() {
 	return true;

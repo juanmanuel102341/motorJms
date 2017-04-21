@@ -11,7 +11,7 @@ class ENGINE_API Game
 {
 public:
 	Ventana* nuevaVentana;
-	//Graphics* nuevoGraphics;
+	Graphics* nuevoGraphics;
 	bool StartUp(HINSTANCE hInstance);
 	
 	
