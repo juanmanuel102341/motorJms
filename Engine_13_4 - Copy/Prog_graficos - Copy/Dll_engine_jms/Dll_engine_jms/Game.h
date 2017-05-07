@@ -4,7 +4,8 @@
 #include"Graphics.h"
 #include"Ventana.h"
 
-
+#include<iostream>
+using namespace std;
 
 
 class ENGINE_API Game

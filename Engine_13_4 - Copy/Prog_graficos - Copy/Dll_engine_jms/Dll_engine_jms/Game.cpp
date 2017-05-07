@@ -13,6 +13,7 @@ bool Game::StartUp(HINSTANCE hInstance)
 	else {
 		
 		nuevoGraphics = new Graphics;
+	
 		if (!nuevoGraphics->Initialize(nuevaVentana)) {
 		return false;
 		}
@@ -31,18 +32,11 @@ void Game::Update() {
 
 			if (msg.message == WM_QUIT)
 				done = true;			// ALT-F4
-			
 		}
-		else {
-				nuevoGraphics->Clear();
-			nuevoGraphics->Begin();
-			nuevoGraphics->Draw();
-			nuevoGraphics->End();
-			nuevoGraphics->Present();
-			done = !OnLoop();
-			
-		}
+		nuevoGraphics->Render();
+		done = !OnLoop();
 	}
+	
 
 }
 

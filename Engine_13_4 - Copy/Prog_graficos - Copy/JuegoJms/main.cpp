@@ -10,7 +10,9 @@
 #include"..//Dll_engine_jms/Dll_engine_jms/EngineApi.h"
 #include "..//Dll_engine_jms/Dll_engine_jms/Ventana.h"
 #include"..//Dll_engine_jms/Dll_engine_jms/Game.h"
-
+//#pragma comment(lib,"d3d9.lib")
+//#pragma comment(lib,"d3dx9.lib")
+//#pragma comment(lib,"dxguid.lib")
 using namespace std;
 
 
@@ -24,9 +26,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
 	LPSTR     lpCmdLine,
 	int       nCmdShow)
-{//problemas con grapichs en game me tira error, no se como hacer referencia a
-	//la ventana desde graphics pasando por game sin problemas
-	//necesito para hacer referencia a ella
+{
 	
 
 	Game * nuevoJuego=new Game;
