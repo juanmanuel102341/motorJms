@@ -20,7 +20,7 @@ struct CustomVertex {
  class ENGINE_API Graphics
 {
 public:
-	
+	CustomVertex coleccionVertices[3];
 	
 	Graphics();
 		bool Initialize(Ventana* _objVentana);
@@ -41,12 +41,18 @@ private:
 	bool InitDirect3D(void);
 	
 	void CleanUp(void);
-	bool SetupEscene();
-	D3DVIEWPORT9 *_viewport;
-	CustomVertex coleccionVertices[3];
-	HRESULT SetupVertexBuffer();
-	void CreacionColeccionVertices();
 	
+
+	HRESULT SetupVertexBuffer(CustomVertex coleccionVertices,int cantidadVertices);
+	void CreacionColeccionVertices();
+
+	bool MatrizTransformacion();
+	bool MatrizVista();
+	bool MatrizProyeccion();
+	D3DXMATRIX MatrizTraslacion(float x,float y);
+	D3DXMATRIX MatrizRotacion(float angle);
+	D3DXMATRIX MatrizScala(float x,float y);
+ 
  };
 
 

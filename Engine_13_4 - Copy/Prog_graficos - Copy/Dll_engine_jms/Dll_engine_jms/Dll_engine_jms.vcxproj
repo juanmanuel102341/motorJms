@@ -19,12 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Entity.h" />
+    <ClInclude Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Entity2d.h" />
+    <ClInclude Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Shape.h" />
     <ClInclude Include="EngineApi.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="Ventana.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Entity.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Entity2d.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Shape.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="Ventana.cpp" />

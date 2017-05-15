@@ -27,6 +27,15 @@
     <ClInclude Include="Ventana.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Entity2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graphics.cpp">
@@ -36,6 +45,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Entity2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Dll_engine_jms\Shape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

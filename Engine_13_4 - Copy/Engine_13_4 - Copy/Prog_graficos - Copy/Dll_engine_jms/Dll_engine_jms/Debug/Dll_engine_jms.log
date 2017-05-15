@@ -1,0 +1,7 @@
+﻿  Shape.cpp
+c:\users\juan manuel\desktop\motorjms-master\engine_13_4 - copy\prog_graficos - copy\dll_engine_jms\dll_engine_jms\entity.h(22): warning C4251: 'Entity::name': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Entity'
+  Entity2d.cpp
+c:\users\juan manuel\desktop\motorjms-master\engine_13_4 - copy\prog_graficos - copy\dll_engine_jms\dll_engine_jms\entity.h(22): warning C4251: 'Entity::name': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Entity'
+  Generating Code...
+     Creating library C:\Users\Juan Manuel\Desktop\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Debug\Dll_engine_jms.lib and object C:\Users\Juan Manuel\Desktop\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Debug\Dll_engine_jms.exp
+  Dll_engine_jms.vcxproj -> C:\Users\Juan Manuel\Desktop\motorJms-master\Engine_13_4 - Copy\Prog_graficos - Copy\Dll_engine_jms\Debug\Dll_engine_jms.dll
